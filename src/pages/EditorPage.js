@@ -36,7 +36,7 @@ const EditorPage = () => {
                 username: location.state?.username,
             });
 
-            //  Listening for joined event
+            // Listening for joined event
             socketRef.current.on(
                 ACTIONS.JOINED,
                 ({ clients, username, socketId }) => {

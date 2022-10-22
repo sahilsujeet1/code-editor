@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import Codemirror from 'codemirror';
-
-//import Codemirror from 'codemirror/lib/codemirror.js';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
 import 'codemirror/mode/javascript/javascript';
@@ -47,11 +45,11 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
                 }
             });
         }
- 
+
         return () => {
             socketRef.current.off(ACTIONS.CODE_CHANGE);
         };
-    }, [socketRef]);
+    }, [socketRef.current]);
 
     return <textarea id="realtimeEditor"></textarea>;
 };
