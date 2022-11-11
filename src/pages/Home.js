@@ -39,7 +39,7 @@ const Home = () => {
             <div className="formWrapper">
                 <img
                     className="homePageLogo"
-                    src="/code-sync.png"
+                    src="/logo2.jpg"
                     alt="code-sync-logo"
                 />
                 <h4 className="mainLabel">Paste invitation ROOM ID</h4>
@@ -77,7 +77,7 @@ const Home = () => {
             </div>
             <footer>
                 <h4>
-                    Developed by Nivedita,Ashwini,Vikrant & Debabrata
+                    Developed by Sahil, Sahaj & Aditya
                 </h4>
             </footer>
         </div>
